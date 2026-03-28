@@ -1,0 +1,7 @@
+
+> keyvent-admin-server@1.0.0 start
+> node server.js
+
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+Server is running on port 5003
+Connected to MongoDB

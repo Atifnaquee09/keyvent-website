@@ -1,0 +1,2735 @@
+{
+  "venues": [
+    {
+      "id": 1,
+      "name": "Vivann Banquet",
+      "rating": {
+        "score": 8.5,
+        "status": "Good",
+        "total_guests": 11
+      },
+      "location": {
+        "address": "Plot No 25, CBD Ground, Opposite Park Plaza hotel, Vishwas Nagar, Delhi NCR",
+        "area": "CBD Ground"
+      },
+      "description": "Vivann Banquet has 2 halls for a grand celebration in New Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800",
+        "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Musical equipment",
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ],
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 800,
+            "max": 1500
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 4000,
+              "max": 5000
+            },
+            "non_vegetarian": {
+              "min": 4500,
+              "max": 5500
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 300,
+            "max": 800
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3500,
+              "max": 4500
+            },
+            "non_vegetarian": {
+              "min": 4000,
+              "max": 5000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Trinity Banquet by The Grand Iris",
+      "rating": {
+        "score": 8,
+        "status": "Very Good",
+        "total_guests": 8
+      },
+      "location": {
+        "address": "MC9X+JC7, Block C, Sector 18, Kavi Nagar, Ghaziabad, Uttar Pradesh 201002",
+        "area": "Ramleela Ground, Kavi Nagar, Ghaziabad"
+      },
+      "description": "Trinity Banquet by The Grand Iris has 2 venues for a grand celebration in Ghaziabad. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Trinity Banquet",
+          "capacity": {
+            "min": 300,
+            "max": 800
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2000,
+              "max": 3000
+            },
+            "non_vegetarian": {
+              "min": 2500,
+              "max": 3500
+            }
+          }
+        },
+        {
+          "name": "Trinity Banquet Aura Lawn",
+          "capacity": {
+            "min": 150,
+            "max": 400
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 1500,
+              "max": 2500
+            },
+            "non_vegetarian": {
+              "min": 2000,
+              "max": 3000
+            }
+          }
+        }
+      ],
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "The Roman Palace",
+      "rating": {
+        "score": 8.2,
+        "status": "Very Good",
+        "total_guests": 15
+      },
+      "location": {
+        "address": "Pradhan Market, Behind Homes 121 society, Gharonda, Narela, Delhi",
+        "area": "Narela"
+      },
+      "description": "The Roman Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+        "https://images.unsplash.com/photo-1598134493186-45ff41dc5371?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 500,
+            "max": 1000
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2500,
+              "max": 3500
+            },
+            "non_vegetarian": {
+              "min": 3000,
+              "max": 4000
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 200,
+            "max": 600
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2000,
+              "max": 3000
+            },
+            "non_vegetarian": {
+              "min": 2500,
+              "max": 3500
+            }
+          }
+        }
+      ],
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Grand Venues",
+      "rating": {
+        "score": 8.7,
+        "status": "Excellent",
+        "total_guests": 22
+      },
+      "location": {
+        "address": "Plot No 11, Main GT Road, Opposite Metro Pillar No 421, Mundka, Delhi",
+        "area": "Mundka"
+      },
+      "description": "Grand Venues has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Grand Hall",
+          "capacity": {
+            "min": 600,
+            "max": 1200
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3000,
+              "max": 4000
+            },
+            "non_vegetarian": {
+              "min": 3500,
+              "max": 4500
+            }
+          }
+        },
+        {
+          "name": "Premium Hall",
+          "capacity": {
+            "min": 300,
+            "max": 800
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2500,
+              "max": 3500
+            },
+            "non_vegetarian": {
+              "min": 3000,
+              "max": 4000
+            }
+          }
+        }
+      ],
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Hotel Grandeur",
+      "rating": {
+        "score": 8.3,
+        "status": "Very Good",
+        "total_guests": 18
+      },
+      "location": {
+        "address": "Plot No 1, Sector 15, Rohini, Delhi",
+        "area": "Rohini"
+      },
+      "description": "Hotel Grandeur has 3 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1598134493186-45ff41dc5371?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Hotel",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up",
+        "AC Rooms"
+      ],
+      "services": [
+        "Catering",
+        "Decoration",
+        "Music System",
+        "Valet Parking",
+        "Accommodation"
+      ],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Grand Ballroom",
+          "capacity": {
+            "min": 800,
+            "max": 1500
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3500,
+              "max": 4500
+            },
+            "non_vegetarian": {
+              "min": 4000,
+              "max": 5000
+            }
+          }
+        },
+        {
+          "name": "Premium Hall",
+          "capacity": {
+            "min": 400,
+            "max": 1000
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3000,
+              "max": 4000
+            },
+            "non_vegetarian": {
+              "min": 3500,
+              "max": 4500
+            }
+          }
+        },
+        {
+          "name": "Intimate Hall",
+          "capacity": {
+            "min": 200,
+            "max": 600
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2500,
+              "max": 3500
+            },
+            "non_vegetarian": {
+              "min": 3000,
+              "max": 4000
+            }
+          }
+        }
+      ],
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Royal Orchid Banquet",
+      "rating": {
+        "score": 8.6,
+        "status": "Excellent",
+        "total_guests": 25
+      },
+      "location": {
+        "address": "Plot No 5, Main Najafgarh Road, Dwarka, Delhi",
+        "area": "Dwarka"
+      },
+      "description": "Royal Orchid Banquet has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 700,
+            "max": 1300
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3200,
+              "max": 4200
+            },
+            "non_vegetarian": {
+              "min": 3700,
+              "max": 4700
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 350,
+            "max": 850
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2800,
+              "max": 3800
+            },
+            "non_vegetarian": {
+              "min": 3300,
+              "max": 4300
+            }
+          }
+        }
+      ],
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Shivam Palace",
+      "rating": {
+        "score": 8.1,
+        "status": "Very Good",
+        "total_guests": 14
+      },
+      "location": {
+        "address": "Plot No 3, Main Najafgarh Road, Dwarka Sector 23, Delhi",
+        "area": "Dwarka Sector 23"
+      },
+      "description": "Shivam Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1598134493186-45ff41dc5371?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 600,
+            "max": 1100
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2800,
+              "max": 3800
+            },
+            "non_vegetarian": {
+              "min": 3300,
+              "max": 4300
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 250,
+            "max": 700
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2400,
+              "max": 3400
+            },
+            "non_vegetarian": {
+              "min": 2900,
+              "max": 3900
+            }
+          }
+        }
+      ],
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Celebration Banquet",
+      "rating": {
+        "score": 8.4,
+        "status": "Very Good",
+        "total_guests": 19
+      },
+      "location": {
+        "address": "Plot No 7, Main Najafgarh Road, Dwarka Sector 10, Delhi",
+        "area": "Dwarka Sector 10"
+      },
+      "description": "Celebration Banquet has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 550,
+            "max": 1050
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2600,
+              "max": 3600
+            },
+            "non_vegetarian": {
+              "min": 3100,
+              "max": 4100
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 200,
+            "max": 650
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2200,
+              "max": 3200
+            },
+            "non_vegetarian": {
+              "min": 2700,
+              "max": 3700
+            }
+          }
+        }
+      ],
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Elite Banquet",
+      "rating": {
+        "score": 8.8,
+        "status": "Excellent",
+        "total_guests": 28
+      },
+      "location": {
+        "address": "Plot No 9, Main Najafgarh Road, Dwarka Sector 3, Delhi",
+        "area": "Dwarka Sector 3"
+      },
+      "description": "Elite Banquet has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1598134493186-45ff41dc5371?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ],
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 750,
+            "max": 1400
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3400,
+              "max": 4400
+            },
+            "non_vegetarian": {
+              "min": 3900,
+              "max": 4900
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 400,
+            "max": 900
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3000,
+              "max": 4000
+            },
+            "non_vegetarian": {
+              "min": 3500,
+              "max": 4500
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Golden Palace",
+      "rating": {
+        "score": 8,
+        "status": "Very Good",
+        "total_guests": 16
+      },
+      "location": {
+        "address": "Plot No 11, Main Najafgarh Road, Dwarka Sector 21, Delhi",
+        "area": "Dwarka Sector 21"
+      },
+      "description": "Golden Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ],
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 650,
+            "max": 1250
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3100,
+              "max": 4100
+            },
+            "non_vegetarian": {
+              "min": 3600,
+              "max": 4600
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 300,
+            "max": 750
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2700,
+              "max": 3700
+            },
+            "non_vegetarian": {
+              "min": 3200,
+              "max": 4200
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Regal Banquet",
+      "rating": {
+        "score": 8.3,
+        "status": "Very Good",
+        "total_guests": 20
+      },
+      "location": {
+        "address": "Plot No 13, Main Najafgarh Road, Dwarka Sector 19, Delhi",
+        "area": "Dwarka Sector 19"
+      },
+      "description": "Regal Banquet has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1598134493186-45ff41dc5371?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ],
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 700,
+            "max": 1300
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3200,
+              "max": 4200
+            },
+            "non_vegetarian": {
+              "min": 3700,
+              "max": 4700
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 350,
+            "max": 800
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2800,
+              "max": 3800
+            },
+            "non_vegetarian": {
+              "min": 3300,
+              "max": 4300
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Majestic Palace",
+      "rating": {
+        "score": 8.5,
+        "status": "Good",
+        "total_guests": 23
+      },
+      "location": {
+        "address": "Plot No 15, Main Najafgarh Road, Dwarka Sector 17, Delhi",
+        "area": "Dwarka Sector 17"
+      },
+      "description": "Majestic Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ],
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 750,
+            "max": 1400
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3400,
+              "max": 4400
+            },
+            "non_vegetarian": {
+              "min": 3900,
+              "max": 4900
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 400,
+            "max": 900
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3000,
+              "max": 4000
+            },
+            "non_vegetarian": {
+              "min": 3500,
+              "max": 4500
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Elegant Banquet",
+      "rating": {
+        "score": 8.2,
+        "status": "Very Good",
+        "total_guests": 17
+      },
+      "location": {
+        "address": "Plot No 17, Main Najafgarh Road, Dwarka Sector 15, Delhi",
+        "area": "Dwarka Sector 15"
+      },
+      "description": "Elegant Banquet has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1598134493186-45ff41dc5371?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ],
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 650,
+            "max": 1250
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3100,
+              "max": 4100
+            },
+            "non_vegetarian": {
+              "min": 3600,
+              "max": 4600
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 300,
+            "max": 750
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2700,
+              "max": 3700
+            },
+            "non_vegetarian": {
+              "min": 3200,
+              "max": 4200
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Supreme Palace",
+      "rating": {
+        "score": 8.6,
+        "status": "Excellent",
+        "total_guests": 26
+      },
+      "location": {
+        "address": "Plot No 19, Main Najafgarh Road, Dwarka Sector 13, Delhi",
+        "area": "Dwarka Sector 13"
+      },
+      "description": "Supreme Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ],
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 800,
+            "max": 1500
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3500,
+              "max": 4500
+            },
+            "non_vegetarian": {
+              "min": 4000,
+              "max": 5000
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 450,
+            "max": 1000
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3100,
+              "max": 4100
+            },
+            "non_vegetarian": {
+              "min": 3600,
+              "max": 4600
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Grand Palace",
+      "rating": {
+        "score": 8.4,
+        "status": "Very Good",
+        "total_guests": 21
+      },
+      "location": {
+        "address": "Plot No 21, Main Najafgarh Road, Dwarka Sector 11, Delhi",
+        "area": "Dwarka Sector 11"
+      },
+      "description": "Grand Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1598134493186-45ff41dc5371?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ],
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 700,
+            "max": 1300
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3200,
+              "max": 4200
+            },
+            "non_vegetarian": {
+              "min": 3700,
+              "max": 4700
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 350,
+            "max": 800
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2800,
+              "max": 3800
+            },
+            "non_vegetarian": {
+              "min": 3300,
+              "max": 4300
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Royal Palace",
+      "rating": {
+        "score": 8.7,
+        "status": "Excellent",
+        "total_guests": 29
+      },
+      "location": {
+        "address": "Plot No 23, Main Najafgarh Road, Dwarka Sector 9, Delhi",
+        "area": "Dwarka Sector 9"
+      },
+      "description": "Royal Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ],
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 850,
+            "max": 1600
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3600,
+              "max": 4600
+            },
+            "non_vegetarian": {
+              "min": 4100,
+              "max": 5100
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 500,
+            "max": 1100
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3200,
+              "max": 4200
+            },
+            "non_vegetarian": {
+              "min": 3700,
+              "max": 4700
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Imperial Banquet",
+      "rating": {
+        "score": 8.1,
+        "status": "Very Good",
+        "total_guests": 18
+      },
+      "location": {
+        "address": "Plot No 25, Main Najafgarh Road, Dwarka Sector 7, Delhi",
+        "area": "Dwarka Sector 7"
+      },
+      "description": "Imperial Banquet has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1598134493186-45ff41dc5371?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ],
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 750,
+            "max": 1400
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3400,
+              "max": 4400
+            },
+            "non_vegetarian": {
+              "min": 3900,
+              "max": 4900
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 400,
+            "max": 900
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3000,
+              "max": 4000
+            },
+            "non_vegetarian": {
+              "min": 3500,
+              "max": 4500
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Prestige Palace",
+      "rating": {
+        "score": 8.3,
+        "status": "Very Good",
+        "total_guests": 22
+      },
+      "location": {
+        "address": "Plot No 27, Main Najafgarh Road, Dwarka Sector 5, Delhi",
+        "area": "Dwarka Sector 5"
+      },
+      "description": "Prestige Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ],
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 800,
+            "max": 1500
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3500,
+              "max": 4500
+            },
+            "non_vegetarian": {
+              "min": 4000,
+              "max": 5000
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 450,
+            "max": 1000
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3100,
+              "max": 4100
+            },
+            "non_vegetarian": {
+              "min": 3600,
+              "max": 4600
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Luxury Palace",
+      "rating": {
+        "score": 8.8,
+        "status": "Excellent",
+        "total_guests": 30
+      },
+      "location": {
+        "address": "Plot No 29, Main Najafgarh Road, Dwarka Sector 3, Delhi",
+        "area": "Dwarka Sector 3"
+      },
+      "description": "Luxury Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1598134493186-45ff41dc5371?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ],
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 900,
+            "max": 1700
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3800,
+              "max": 4800
+            },
+            "non_vegetarian": {
+              "min": 4300,
+              "max": 5300
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 550,
+            "max": 1200
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3400,
+              "max": 4400
+            },
+            "non_vegetarian": {
+              "min": 3900,
+              "max": 4900
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Splendid Palace",
+      "rating": {
+        "score": 8.2,
+        "status": "Very Good",
+        "total_guests": 19
+      },
+      "location": {
+        "address": "Plot No 31, Main Najafgarh Road, Dwarka Sector 1, Delhi",
+        "area": "Dwarka Sector 1"
+      },
+      "description": "Splendid Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ],
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 750,
+            "max": 1400
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3400,
+              "max": 4400
+            },
+            "non_vegetarian": {
+              "min": 3900,
+              "max": 4900
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 400,
+            "max": 900
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3000,
+              "max": 4000
+            },
+            "non_vegetarian": {
+              "min": 3500,
+              "max": 4500
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Majestic Banquet",
+      "rating": {
+        "score": 8.5,
+        "status": "Good",
+        "total_guests": 24
+      },
+      "location": {
+        "address": "Plot No 33, Main Najafgarh Road, Dwarka Sector 2, Delhi",
+        "area": "Dwarka Sector 2"
+      },
+      "description": "Majestic Banquet has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1598134493186-45ff41dc5371?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 800,
+            "max": 1500
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3500,
+              "max": 4500
+            },
+            "non_vegetarian": {
+              "min": 4000,
+              "max": 5000
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 450,
+            "max": 1000
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3100,
+              "max": 4100
+            },
+            "non_vegetarian": {
+              "min": 3600,
+              "max": 4600
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Elegant Palace",
+      "rating": {
+        "score": 8.4,
+        "status": "Very Good",
+        "total_guests": 25
+      },
+      "location": {
+        "address": "Plot No 35, Main Najafgarh Road, Dwarka Sector 4, Delhi",
+        "area": "Dwarka Sector 4"
+      },
+      "description": "Elegant Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 800,
+            "max": 1500
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3500,
+              "max": 4500
+            },
+            "non_vegetarian": {
+              "min": 4000,
+              "max": 5000
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 450,
+            "max": 1000
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3100,
+              "max": 4100
+            },
+            "non_vegetarian": {
+              "min": 3600,
+              "max": 4600
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Grand Celebration Hall",
+      "rating": {
+        "score": 8.6,
+        "status": "Excellent",
+        "total_guests": 27
+      },
+      "location": {
+        "address": "Plot No 37, Main Najafgarh Road, Dwarka Sector 6, Delhi",
+        "area": "Dwarka Sector 6"
+      },
+      "description": "Grand Celebration Hall has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1598134493186-45ff41dc5371?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 850,
+            "max": 1600
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3600,
+              "max": 4600
+            },
+            "non_vegetarian": {
+              "min": 4100,
+              "max": 5100
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 500,
+            "max": 1100
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3200,
+              "max": 4200
+            },
+            "non_vegetarian": {
+              "min": 3700,
+              "max": 4700
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Royal Celebration Palace",
+      "rating": {
+        "score": 8.3,
+        "status": "Very Good",
+        "total_guests": 23
+      },
+      "location": {
+        "address": "Plot No 39, Main Najafgarh Road, Dwarka Sector 8, Delhi",
+        "area": "Dwarka Sector 8"
+      },
+      "description": "Royal Celebration Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 750,
+            "max": 1400
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3400,
+              "max": 4400
+            },
+            "non_vegetarian": {
+              "min": 3900,
+              "max": 4900
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 400,
+            "max": 900
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3000,
+              "max": 4000
+            },
+            "non_vegetarian": {
+              "min": 3500,
+              "max": 4500
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Supreme Celebration Hall",
+      "rating": {
+        "score": 8.7,
+        "status": "Excellent",
+        "total_guests": 28
+      },
+      "location": {
+        "address": "Plot No 41, Main Najafgarh Road, Dwarka Sector 10, Delhi",
+        "area": "Dwarka Sector 10"
+      },
+      "description": "Supreme Celebration Hall has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1598134493186-45ff41dc5371?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 900,
+            "max": 1700
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3800,
+              "max": 4800
+            },
+            "non_vegetarian": {
+              "min": 4300,
+              "max": 5300
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 550,
+            "max": 1200
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3400,
+              "max": 4400
+            },
+            "non_vegetarian": {
+              "min": 3900,
+              "max": 4900
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Majestic Celebration Palace",
+      "rating": {
+        "score": 8.1,
+        "status": "Very Good",
+        "total_guests": 21
+      },
+      "location": {
+        "address": "Plot No 43, Main Najafgarh Road, Dwarka Sector 12, Delhi",
+        "area": "Dwarka Sector 12"
+      },
+      "description": "Majestic Celebration Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 700,
+            "max": 1300
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3200,
+              "max": 4200
+            },
+            "non_vegetarian": {
+              "min": 3700,
+              "max": 4700
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 350,
+            "max": 800
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2800,
+              "max": 3800
+            },
+            "non_vegetarian": {
+              "min": 3300,
+              "max": 4300
+            }
+          }
+        }
+      ],
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Elegant Celebration Hall",
+      "rating": {
+        "score": 8.5,
+        "status": "Good",
+        "total_guests": 26
+      },
+      "location": {
+        "address": "Plot No 45, Main Najafgarh Road, Dwarka Sector 14, Delhi",
+        "area": "Dwarka Sector 14"
+      },
+      "description": "Elegant Celebration Hall has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1598134493186-45ff41dc5371?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 800,
+            "max": 1500
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3500,
+              "max": 4500
+            },
+            "non_vegetarian": {
+              "min": 4000,
+              "max": 5000
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 450,
+            "max": 1000
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3100,
+              "max": 4100
+            },
+            "non_vegetarian": {
+              "min": 3600,
+              "max": 4600
+            }
+          }
+        }
+      ],
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Luxury Celebration Palace",
+      "rating": {
+        "score": 8.9,
+        "status": "Excellent",
+        "total_guests": 31
+      },
+      "location": {
+        "address": "Plot No 47, Main Najafgarh Road, Dwarka Sector 16, Delhi",
+        "area": "Dwarka Sector 16"
+      },
+      "description": "Luxury Celebration Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 950,
+            "max": 1800
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 4000,
+              "max": 5000
+            },
+            "non_vegetarian": {
+              "min": 4500,
+              "max": 5500
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 600,
+            "max": 1300
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3600,
+              "max": 4600
+            },
+            "non_vegetarian": {
+              "min": 4100,
+              "max": 5100
+            }
+          }
+        }
+      ],
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Grand Royal Palace",
+      "rating": {
+        "score": 8.4,
+        "status": "Very Good",
+        "total_guests": 25
+      },
+      "location": {
+        "address": "Plot No 49, Main Najafgarh Road, Dwarka Sector 18, Delhi",
+        "area": "Dwarka Sector 18"
+      },
+      "description": "Grand Royal Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1598134493186-45ff41dc5371?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": ["Indian", "Chinese", "Italian", "Continental"],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 850,
+            "max": 1600
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3600,
+              "max": 4600
+            },
+            "non_vegetarian": {
+              "min": 4100,
+              "max": 5100
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 500,
+            "max": 1100
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3200,
+              "max": 4200
+            },
+            "non_vegetarian": {
+              "min": 3700,
+              "max": 4700
+            }
+          }
+        }
+      ],
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Supreme Royal Palace",
+      "rating": {
+        "score": 8.8,
+        "status": "Excellent",
+        "total_guests": 29
+      },
+      "location": {
+        "address": "Plot No 51, Main Najafgarh Road, Dwarka Sector 20, Delhi",
+        "area": "Dwarka Sector 20"
+      },
+      "description": "Supreme Royal Palace has 2 halls for a grand celebration in Delhi. Experience elegance and excellence in event hosting with our premium facilities and world-class service.",
+      "images": [
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800",
+        "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+      ],
+      "Gallery": [
+        "https://lh3.googleusercontent.com/P5565YNmdYSxJgKywTclxbezoVg1EJIpZQwVWQR0fDB4hZnjZZHNzalNmlBxxKLTdmpTkMjulNXKo9U8J4pZl_BDSaio1Q-vFNpfHOM=w1418-h946-n-rw-c0xffffffff-l95-e31",
+        "https://lh3.googleusercontent.com/bWTXHZcCFf5Eqdg8IuZhjJGhQ0PqDmH9bJnGpW5P1jQw5pZnJmH8pK5pLmN7pO9pQmRnHjK5pLmN7pO9pQmRn=s1280"
+      ],
+      "type": "Banquet Hall",
+      "location_type": "Indoor",
+      "cuisine": [
+        "Indian",
+        "Chinese",
+        "Italian",
+        "Continental",
+        "Multicuisine"
+      ],
+      "facilities": [
+        "Wi-Fi",
+        "Stage",
+        "Projector",
+        "TV screens",
+        "Bathroom",
+        "Heating",
+        "Power back-up"
+      ],
+      "services": ["Catering", "Decoration", "Music System", "Valet Parking"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 900,
+            "max": 1700
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3800,
+              "max": 4800
+            },
+            "non_vegetarian": {
+              "min": 4300,
+              "max": 5300
+            }
+          }
+        },
+        {
+          "name": "Second Hall",
+          "capacity": {
+            "min": 550,
+            "max": 1200
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 3400,
+              "max": 4400
+            },
+            "non_vegetarian": {
+              "min": 3900,
+              "max": 4900
+            }
+          }
+        }
+      ],
+      "suited_for": [
+        "All events",
+        "Wedding ceremony",
+        "Wedding reception",
+        "Mehendi party",
+        "Sangeet",
+        "Engagement",
+        "Birthday party",
+        "Farewell / Prom",
+        "Corporate party",
+        "Conference / Seminar / Workshop"
+      ]
+    },
+    {
+      "name": "Atif",
+      "rating": {
+        "score": 8,
+        "status": "Good",
+        "total_guests": 0
+      },
+      "location": {
+        "address": "jhbchyw hbduibed ",
+        "area": "90909"
+      },
+      "description": "jdbcvyuwbe jhciu wuch ouch. uiwgciuh ohuhw eu uhufhweuhf foh ",
+      "images": [],
+      "Gallery": [],
+      "type": {
+        "0": "B",
+        "1": "a",
+        "2": "n",
+        "3": "q",
+        "4": "u",
+        "5": "e",
+        "6": "t",
+        "7": " ",
+        "8": "H",
+        "9": "a",
+        "10": "l",
+        "11": "l",
+        "": "Hotel"
+      },
+      "location_type": {
+        "0": "I",
+        "1": "n",
+        "2": "d",
+        "3": "o",
+        "4": "o",
+        "5": "r",
+        "": "Outdoor"
+      },
+      "cuisine": ["bxhyg"],
+      "facilities": ["hgvyggyhh"],
+      "services": ["vyhhb"],
+      "payment_policy": {
+        "advance": "50%",
+        "cancellation": "Before 15 days"
+      },
+      "suited_for": ["hbvhybbh"],
+      "halls": [
+        {
+          "name": "Main Hall",
+          "capacity": {
+            "min": 98000,
+            "max": 500
+          },
+          "pricing": {
+            "vegetarian": {
+              "min": 2000,
+              "max": 3000
+            },
+            "non_vegetarian": {
+              "min": 2500,
+              "max": 3500
+            }
+          }
+        }
+      ],
+      "id": 31
+    }
+  ]
+}

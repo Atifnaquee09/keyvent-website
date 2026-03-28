@@ -1,0 +1,212 @@
+/* Filter Dropdown Component Styles - matches navbar dropdown */
+.filter-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Filter Dropdown Trigger Button */
+.filter-dropdown-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 16px;
+  min-width: 120px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-align: left;
+  background: white;
+  border: 2px solid #e5d3f3;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #6b7280;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Primary variant (active filter) */
+.filter-dropdown.primary .filter-dropdown-trigger,
+.filter-dropdown.active .filter-dropdown-trigger {
+  border-color: #C5AA7B;
+  background-color: #f8f4ff;
+  color: #3F1F4F;
+  font-weight: 600;
+}
+
+/* Hover states */
+.filter-dropdown-trigger:hover {
+  border-color: #C5AA7B;
+  background-color: #f8f4ff;
+  color: #3F1F4F;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(197, 170, 123, 0.2);
+}
+
+.filter-dropdown.primary .filter-dropdown-trigger:hover,
+.filter-dropdown.active .filter-dropdown-trigger:hover {
+  background: linear-gradient(135deg, #C5AA7B, #D4B587, #F3E2BC, #D4B587, #C5AA7B);
+  background-size: 200% 200%;
+  animation: goldShimmer 2s ease-in-out infinite;
+  color: #3F1F4F;
+  border-color: transparent;
+}
+
+/* Arrow styling */
+.filter-dropdown-arrow {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.filter-dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Menu - matching navbar services dropdown */
+.filter-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  min-width: 16rem;
+  max-width: 20rem;
+  
+  /* Golden gradient background like navbar services dropdown */
+  background: linear-gradient(135deg, #C5AA7B, #D4B587, #F3E2BC, #D4B587, #C5AA7B);
+  background-size: 200% 200%;
+  animation: goldShimmer 4s ease-in-out infinite;
+  
+  /* Layout & Appearance */
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  
+  /* Animation states */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.filter-dropdown-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown Items */
+.filter-dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  border-radius: 8px;
+  margin: 2px 0;
+  transition: all 0.2s ease;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.filter-dropdown-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: translateX(4px);
+  color: #000;
+}
+
+/* Selected item styling */
+.filter-dropdown-item.selected {
+  background: rgba(63, 31, 79, 0.15);
+  color: #3F1F4F;
+  font-weight: 700;
+}
+
+.filter-dropdown-item.selected:hover {
+  background: rgba(63, 31, 79, 0.25);
+  color: #3F1F4F;
+}
+
+/* Clear option styling */
+.filter-dropdown-item.clear-option {
+  color: #dc2626;
+  font-style: italic;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 4px;
+  padding-bottom: 8px;
+}
+
+.filter-dropdown-item.clear-option:hover {
+  background: rgba(220, 38, 38, 0.1);
+  color: #b91c1c;
+}
+
+/* Secondary variant for less important filters */
+.filter-dropdown.secondary .filter-dropdown-trigger {
+  border-color: #e5e7eb;
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.filter-dropdown.secondary .filter-dropdown-trigger:hover {
+  border-color: #d1d5db;
+  color: #6b7280;
+}
+
+/* Compact variant for smaller spaces */
+.filter-dropdown.compact .filter-dropdown-trigger {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  min-width: 100px;
+}
+
+.filter-dropdown.compact .filter-dropdown-menu {
+  min-width: 12rem;
+  max-width: 16rem;
+}
+
+.filter-dropdown.compact .filter-dropdown-item {
+  padding: 8px 12px;
+  font-size: 0.8rem;
+}
+
+/* Gold shimmer animation */
+@keyframes goldShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filter-dropdown-menu {
+    min-width: 14rem;
+    max-width: 18rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  
+  .filter-dropdown-menu.open {
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  .filter-dropdown-trigger {
+    min-width: 100px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}

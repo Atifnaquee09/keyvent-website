@@ -1,0 +1,80 @@
+{
+  "venue": {
+    "name": "Vivann Banquet",
+    "rating": {
+      "score": 8.5,
+      "status": "Good",
+      "total_guests": 11
+    },
+    "location": {
+      "address": "Plot No 25, CBD Ground, Opposite Park Plaza hotel, Vishwas Nagar, Delhi NCR",
+      "area": "CBD Ground"
+    },
+    "description": "Vivann Banquet has 2 halls for a grand celebration in New Delhi.",
+    "cuisine_types": [
+      "Indian",
+      "Chinese",
+      "Italian",
+      "Continental"
+    ],
+    "special_features": [
+      "Musical equipment",
+      "Wi-Fi / Internet",
+      "Stage",
+      "Projector",
+      "TV screens",
+      "Bathroom",
+      "Power back-up"
+    ],
+    "halls": [
+      {
+        "name": "Hall 1",
+        "capacity": {
+          "min": 800,
+          "max": 1500,
+          "unit": "people"
+        },
+        "payment_model": "Per plate system",
+        "pricing": {
+          "price_per_plate_veg": {
+            "amount": 4000,
+            "currency": "₹",
+            "unit": "per person",
+            "note": "excl. taxes"
+          }
+        }
+      },
+      {
+        "name": "Hall 2",
+        "capacity": {
+          "min": 300,
+          "max": 800,
+          "unit": "people"
+        },
+        "payment_model": "Per plate system",
+        "pricing": {
+          "price_per_plate_veg": {
+            "amount": 4000,
+            "currency": "₹",
+            "unit": "per person",
+            "note": "excl. taxes"
+          }
+        }
+      }
+    ],
+    "actions": [
+      {
+        "type": "quote",
+        "label": "Get a Quote"
+      },
+      {
+        "type": "contact",
+        "label": "Contact"
+      },
+      {
+        "type": "details",
+        "label": "More Details"
+      }
+    ]
+  }
+}

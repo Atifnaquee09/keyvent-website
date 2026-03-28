@@ -1,0 +1,256 @@
+/* CTA Button Wrapper */
+.cta-button-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Base CTA Button Styles */
+.cta-button-component {
+  /* Layout */
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  min-width: fit-content;
+  width: auto;
+  margin: 4px;
+  
+  /* Typography */
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.025em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  
+  /* Appearance */
+  background: linear-gradient(135deg, #C5AA7B, #D4B587, #F3E2BC, #D4B587, #C5AA7B);
+  background-size: 200% 200%;
+  color: #3F1F4F;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(197, 170, 123, 0.3);
+  cursor: pointer;
+  overflow: hidden;
+  
+  /* Animation */
+  animation: goldShimmer 3s ease-in-out infinite;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Content wrapper for proper spacing */
+.cta-button-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Shimmer overlay effect */
+.cta-button-shimmer {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s ease;
+  z-index: 1;
+}
+
+/* Size variations */
+.cta-button-component.small {
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  min-height: 36px;
+  margin: 3px;
+}
+
+.cta-button-component.medium {
+  padding: 14px 28px;
+  font-size: 0.9rem;
+  min-height: 44px;
+  margin: 4px;
+}
+
+.cta-button-component.large {
+  padding: 18px 36px;
+  font-size: 1rem;
+  min-height: 52px;
+  margin: 6px;
+}
+
+/* Dropdown arrow */
+.cta-button-arrow {
+  transition: transform 0.3s ease;
+  margin-left: 4px;
+}
+
+.cta-button-arrow.open {
+  transform: rotate(180deg);
+}
+
+/* Hover states */
+.cta-button-component:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 12px 35px rgba(197, 170, 123, 0.4);
+  background-size: 150% 150%;
+  animation: goldShimmer 1.5s ease-in-out infinite;
+}
+
+.cta-button-component:hover .cta-button-shimmer {
+  left: 100%;
+}
+
+.cta-button-component:active {
+  transform: scale(0.98) translateY(0px);
+}
+
+/* Disabled state */
+.cta-button-component:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  animation: none;
+}
+
+.cta-button-component:disabled:hover {
+  transform: none;
+  box-shadow: 0 8px 25px rgba(197, 170, 123, 0.3);
+  background-size: 200% 200%;
+}
+
+/* Dropdown Menu - matches services dropdown styling */
+.cta-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 16rem;
+  max-width: 20rem;
+  
+  /* Golden gradient background like services dropdown */
+  background: linear-gradient(135deg, #C5AA7B, #D4B587, #F3E2BC, #D4B587, #C5AA7B);
+  background-size: 200% 200%;
+  animation: goldShimmer 4s ease-in-out infinite;
+  
+  /* Layout & Appearance */
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  
+  /* Animation states */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.cta-dropdown.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.cta-dropdown-item {
+  display: block;
+  padding: 12px 16px;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  border-radius: 8px;
+  margin: 2px 0;
+  transition: all 0.2s ease;
+  background: transparent;
+  white-space: nowrap;
+}
+
+.cta-dropdown-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: translateX(4px);
+  color: #000;
+}
+
+/* Variant styles */
+.cta-button-component.secondary {
+  background: linear-gradient(135deg, #3F1F4F, #5D2E6B, #8B4A6B);
+  background-size: 200% 200%;
+  color: white;
+  box-shadow: 0 8px 25px rgba(63, 31, 79, 0.3);
+}
+
+.cta-button-component.secondary:hover {
+  box-shadow: 0 12px 35px rgba(63, 31, 79, 0.4);
+}
+
+.cta-button-component.outline {
+  background: transparent;
+  color: #C5AA7B;
+  border: 2px solid #C5AA7B;
+  box-shadow: 0 4px 15px rgba(197, 170, 123, 0.2);
+}
+
+.cta-button-component.outline:hover {
+  background: linear-gradient(135deg, #C5AA7B, #D4B587, #F3E2BC, #D4B587, #C5AA7B);
+  background-size: 200% 200%;
+  color: #3F1F4F;
+  border-color: transparent;
+  animation: goldShimmer 1.5s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cta-dropdown {
+    min-width: 14rem;
+    max-width: 18rem;
+  }
+  
+  .cta-button-component.large {
+    padding: 16px 32px;
+    font-size: 0.9rem;
+    margin: 5px;
+  }
+  
+  .cta-button-component.medium {
+    padding: 12px 24px;
+    font-size: 0.85rem;
+    margin: 4px;
+  }
+  
+  .cta-button-component.small {
+    padding: 10px 18px;
+    font-size: 0.8rem;
+    margin: 3px;
+  }
+}
+
+/* Gold shimmer animation keyframes */
+@keyframes goldShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Focus styles for accessibility */
+.cta-button-component:focus {
+  outline: none;
+  box-shadow: 0 8px 25px rgba(197, 170, 123, 0.3), 0 0 0 3px rgba(197, 170, 123, 0.2);
+}
+
+.cta-button-component:focus:not(:hover) {
+  transform: none;
+}

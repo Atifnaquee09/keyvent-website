@@ -1,0 +1,10 @@
+{
+    "name": "New Test Venue",
+    "location": {
+        "address": "456 New Street",
+        "area": "New Area"
+    },
+    "description": "This is a new test venue",
+    "id": "New_Test_Venue_1762454298",
+    "folder": "New_Test_Venue_1762454298"
+}

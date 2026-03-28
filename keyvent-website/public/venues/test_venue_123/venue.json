@@ -1,0 +1,51 @@
+{
+  "id": "test_venue_123",
+  "name": "Test Venue",
+  "rating": {
+    "score": 4.5,
+    "status": "Excellent",
+    "total_guests": 150
+  },
+  "location": {
+    "address": "123 Test Street",
+    "area": "Test Area"
+  },
+  "description": "This is a test venue to verify our folder-based storage approach.",
+  "images": [
+    "/venues/test_venue_123/image1.jpg",
+    "/venues/test_venue_123/image2.jpg"
+  ],
+  "Gallery": [
+    "/venues/test_venue_123/gallery1.jpg",
+    "/venues/test_venue_123/gallery2.jpg"
+  ],
+  "type": "Banquet Hall",
+  "location_type": "Indoor",
+  "cuisine": ["Indian", "Chinese", "Italian"],
+  "facilities": ["Parking", "Air Conditioning", "Stage"],
+  "services": ["Catering", "Decoration", "Photography"],
+  "payment_policy": {
+    "advance": "50%",
+    "cancellation": "Before 15 days"
+  },
+  "suited_for": ["Wedding", "Corporate Events"],
+  "halls": [
+    {
+      "name": "Main Hall",
+      "capacity": {
+        "min": 100,
+        "max": 500
+      },
+      "pricing": {
+        "vegetarian": {
+          "min": 2000,
+          "max": 3000
+        },
+        "non_vegetarian": {
+          "min": 2500,
+          "max": 3500
+        }
+      }
+    }
+  ]
+}
