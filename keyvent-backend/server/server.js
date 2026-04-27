@@ -83,8 +83,8 @@ const ALLOWED_IMAGE_MIME = new Set([
 const upload = multer({
   storage: storage,
   limits: {
-    fileSize: 10 * 1024 * 1024, // 10MB per file
-    files: 20                    // per request (frontend chunks at 8)
+    fileSize: 100 * 1024 * 1024, // 100MB per file
+    files: 20                     // per request (frontend chunks at 2)
   },
   fileFilter: (req, file, cb) => {
     if (!ALLOWED_IMAGE_MIME.has(file.mimetype)) {
@@ -272,7 +272,7 @@ app.post('/api/upload', (req, res) => {
       let message = err.message || 'Upload failed';
       if (err.code === 'LIMIT_FILE_SIZE') {
         status = 413;
-        message = 'A file exceeds the 10MB per-file limit.';
+        message = 'A file exceeds the 100MB per-file limit.';
       } else if (err.code === 'LIMIT_FILE_COUNT') {
         status = 413;
         message = 'Too many files in a single request (max 20).';

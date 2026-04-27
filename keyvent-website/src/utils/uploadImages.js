@@ -1,8 +1,8 @@
 const API_BASE =
   process.env.REACT_APP_SERVER_URL || 'https://api.keyvent.in';
 
-const DEFAULT_BATCH_SIZE = 8;
-const MAX_PER_FILE_BYTES = 10 * 1024 * 1024;
+const DEFAULT_BATCH_SIZE = 2;
+const MAX_PER_FILE_BYTES = 100 * 1024 * 1024;
 const MAX_RETRIES = 2;
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -58,7 +58,7 @@ export async function uploadImages(files, opts = {}) {
   const oversized = list.filter((f) => f.size > MAX_PER_FILE_BYTES);
   if (oversized.length > 0) {
     throw new Error(
-      `${oversized.length} file(s) exceed the 10MB per-file limit: ${oversized
+      `${oversized.length} file(s) exceed the 100MB per-file limit: ${oversized
         .map((f) => f.name)
         .slice(0, 3)
         .join(', ')}${oversized.length > 3 ? '...' : ''}`
