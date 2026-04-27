@@ -29,8 +29,9 @@ MongoClient.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true 
   });
 
 // Configure CORS options
+const allowedOrigins = ['https://keyvent.in', 'https://www.keyvent.in', 'http://localhost:3000'];
 const corsOptions = {
-  origin: ['https://keyvent.in', 'http://localhost:3000'], // Allow both production and local development
+  origin: allowedOrigins,
   credentials: true,
   optionsSuccessStatus: 200
 };
@@ -38,9 +39,21 @@ const corsOptions = {
 // Apply CORS middleware with specific options
 app.use(cors(corsOptions));
 
+// Belt-and-suspenders: ensure CORS headers are present even on error responses
+// emitted before the route handler runs (e.g. multer rejections).
+app.use((req, res, next) => {
+  const origin = req.headers.origin;
+  if (origin && allowedOrigins.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Vary', 'Origin');
+    res.setHeader('Access-Control-Allow-Credentials', 'true');
+  }
+  next();
+});
+
 // Middleware
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json({ limit: '2mb' }));
+app.use(express.urlencoded({ extended: true, limit: '2mb' }));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Ensure uploads directory exists
@@ -59,7 +72,27 @@ const storage = multer.diskStorage({
   }
 });
 
-const upload = multer({ storage: storage });
+const ALLOWED_IMAGE_MIME = new Set([
+  'image/jpeg',
+  'image/png',
+  'image/webp',
+  'image/gif',
+  'image/avif'
+]);
+
+const upload = multer({
+  storage: storage,
+  limits: {
+    fileSize: 10 * 1024 * 1024, // 10MB per file
+    files: 20                    // per request (frontend chunks at 8)
+  },
+  fileFilter: (req, file, cb) => {
+    if (!ALLOWED_IMAGE_MIME.has(file.mimetype)) {
+      return cb(new Error(`Unsupported file type: ${file.mimetype}`));
+    }
+    cb(null, true);
+  }
+});
 
 // Helper functions for MongoDB operations
 const getVenuesCollection = () => db.collection('venues');
@@ -229,23 +262,33 @@ app.post('/api/photographers', async (req, res) => {
 });
 
 // Upload images
-app.post('/api/upload', upload.array('images', 100), (req, res) => {
-  try {
-    console.log('Received file upload request');
-    console.log('Files received:', req.files);
-    
+const uploadHandler = upload.array('images', 20);
+
+app.post('/api/upload', (req, res) => {
+  uploadHandler(req, res, (err) => {
+    if (err) {
+      console.error('Upload error:', err.code || '', err.message);
+      let status = 400;
+      let message = err.message || 'Upload failed';
+      if (err.code === 'LIMIT_FILE_SIZE') {
+        status = 413;
+        message = 'A file exceeds the 10MB per-file limit.';
+      } else if (err.code === 'LIMIT_FILE_COUNT') {
+        status = 413;
+        message = 'Too many files in a single request (max 20).';
+      } else if (err.code === 'LIMIT_UNEXPECTED_FILE') {
+        message = `Unexpected field: ${err.field}`;
+      }
+      return res.status(status).json({ success: false, message });
+    }
+
     if (!req.files || req.files.length === 0) {
-      console.log('No files uploaded');
       return res.status(400).json({ success: false, message: 'No files uploaded' });
     }
-    
-    const imageUrls = req.files.map(file => `/uploads/${file.filename}`);
-    console.log('Image URLs generated:', imageUrls);
+
+    const imageUrls = req.files.map((file) => `/uploads/${file.filename}`);
     res.json({ success: true, images: imageUrls, message: 'Images uploaded successfully' });
-  } catch (error) {
-    console.error('Error uploading images:', error);
-    res.status(500).json({ success: false, message: 'Error uploading images', error: error.message });
-  }
+  });
 });
 
 // Get all return gifts
@@ -499,7 +542,27 @@ app.get('/api/debug/images', async (req, res) => {
   }
 });
 
+// JSON error handler — ensures error responses still carry CORS headers
+// (set earlier by the cors middleware) instead of falling through to
+// Express's default HTML error page.
+// eslint-disable-next-line no-unused-vars
+app.use((err, req, res, next) => {
+  console.error('Unhandled error:', err);
+  if (res.headersSent) return next(err);
+  const status = err.status || 500;
+  res.status(status).json({
+    success: false,
+    message: err.message || 'Internal server error'
+  });
+});
+
 // Start server
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+// Allow large multipart uploads to take longer than the default 2 min.
+// Must be paired with matching proxy_read_timeout / proxy_send_timeout in Nginx.
+server.requestTimeout = 5 * 60 * 1000;
+server.headersTimeout = 6 * 60 * 1000;
+server.keepAliveTimeout = 65 * 1000;

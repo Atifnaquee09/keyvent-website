@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { uploadImages } from '../../utils/uploadImages';
 
 const AddPhotographerPage = () => {
   const navigate = useNavigate();
@@ -57,36 +58,7 @@ const AddPhotographerPage = () => {
       console.log('Submitting photographer data:', photographerData);
       console.log('Image files:', imageFiles);
       
-      // First, upload the images
-      let imageUrls = [];
-      
-      if (imageFiles.length > 0) {
-        const formData = new FormData();
-        imageFiles.forEach((file) => {
-          formData.append('images', file);
-        });
-        
-        console.log('Uploading images...');
-        const uploadResponse = await fetch(`${process.env.REACT_APP_SERVER_URL || 'https://api.keyvent.in'}/api/upload`, {
-          method: 'POST',
-          body: formData,
-        }).catch(err => {
-          console.error('Network error during upload:', err);
-          throw new Error(`Network error during image upload: ${err.message}`);
-        });
-        
-        console.log('Upload response status:', uploadResponse.status);
-        
-        if (!uploadResponse.ok) {
-          const errorText = await uploadResponse.text();
-          console.error('Upload failed with status:', uploadResponse.status, 'and body:', errorText);
-          throw new Error(`Failed to upload images: ${uploadResponse.status} ${uploadResponse.statusText}`);
-        }
-        
-        const uploadResult = await uploadResponse.json();
-        console.log('Upload result:', uploadResult);
-        imageUrls = uploadResult.images || [];
-      }
+      const imageUrls = await uploadImages(imageFiles);
       
       // Then, save the photographer data
       const photographerPayload = {

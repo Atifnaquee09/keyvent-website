@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getImageUrl } from '../../utils/imageUtils';
+import { uploadImages } from '../../utils/uploadImages';
 
 const EditVenue = () => {
   const navigate = useNavigate();
@@ -179,37 +180,21 @@ const EditVenue = () => {
     }
     
     try {
-      const formData = new FormData();
-      for (let i = 0; i < files.length; i++) {
-        formData.append('images', files[i]);
-      }
-      
-      const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/upload`, {
-        method: 'POST',
-        body: formData,
-      });
-      
-      const result = await response.json();
-      
-      if (result.success) {
-        // Update venue data with uploaded image URLs
-        if (field === 'images') {
-          setVenueData({
-            ...venueData,
-            images: [...venueData.images, ...result.images]
-          });
-        } else {
-          setVenueData({
-            ...venueData,
-            Gallery: [...venueData.Gallery, ...result.images]
-          });
-        }
-        setSuccess(true);
+      const uploadedUrls = await uploadImages(Array.from(files));
+      if (field === 'images') {
+        setVenueData({
+          ...venueData,
+          images: [...venueData.images, ...uploadedUrls]
+        });
       } else {
-        setError(result.message || 'Error uploading images');
+        setVenueData({
+          ...venueData,
+          Gallery: [...venueData.Gallery, ...uploadedUrls]
+        });
       }
+      setSuccess(true);
     } catch (err) {
-      setError('Network error. Please try again.');
+      setError(err.message || 'Failed to upload images.');
       console.error('Error uploading images:', err);
     }
   };

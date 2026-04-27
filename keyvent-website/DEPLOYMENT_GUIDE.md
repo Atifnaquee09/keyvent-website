@@ -83,6 +83,13 @@ server {
     listen 80;
     server_name your-domain.com; # Replace with your domain or VPS IP
 
+    # Allow multi-image uploads (default is 1MB which causes 413 -> shows
+    # as a CORS error in the browser because Nginx 413 responses don't
+    # include CORS headers). Frontend chunks at ~8 files per request, so
+    # this gives plenty of headroom for HD photos.
+    client_max_body_size 100M;
+    client_body_timeout 5m;
+
     # Frontend static files
     location / {
         root /var/www/keyvent-frontend/build;
@@ -101,6 +108,11 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_cache_bypass $http_upgrade;
+
+        # Large upload friendliness
+        proxy_request_buffering off;
+        proxy_read_timeout 5m;
+        proxy_send_timeout 5m;
     }
 
     # Security headers

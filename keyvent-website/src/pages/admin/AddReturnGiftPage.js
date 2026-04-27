@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { uploadImages } from '../../utils/uploadImages';
 
 const AddReturnGiftPage = () => {
   const navigate = useNavigate();
@@ -64,30 +65,15 @@ const AddReturnGiftPage = () => {
     const file = e.target.files[0];
     if (!file) return;
 
-    const formData = new FormData();
-    formData.append('images', file);
-
     try {
       setLoading(true);
-      const response = await fetch(`${process.env.REACT_APP_SERVER_URL || 'https://api.keyvent.in'}/api/upload`, {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (!response.ok) {
-        throw new Error(`Failed to upload image: ${response.status} ${response.statusText}`);
-      }
-
-      const result = await response.json();
-      if (result.success && result.images && result.images.length > 0) {
-        setReturnGiftData(prev => ({
-          ...prev,
-          profileImage: result.images[0]
-        }));
-        setProfileImagePreview(URL.createObjectURL(file));
-      } else {
-        throw new Error('Failed to get image URL from server');
-      }
+      const urls = await uploadImages([file]);
+      if (urls.length === 0) throw new Error('Server returned no image URL');
+      setReturnGiftData(prev => ({
+        ...prev,
+        profileImage: urls[0]
+      }));
+      setProfileImagePreview(URL.createObjectURL(file));
     } catch (error) {
       console.error('Error uploading profile image:', error);
       setError(`Error uploading profile image: ${error.message}`);
@@ -100,30 +86,14 @@ const AddReturnGiftPage = () => {
     const file = e.target.files[0];
     if (!file) return;
 
-    const formData = new FormData();
-    formData.append('images', file);
-
     try {
       setLoading(true);
-      const response = await fetch(`${process.env.REACT_APP_SERVER_URL || 'https://api.keyvent.in'}/api/upload`, {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (!response.ok) {
-        throw new Error(`Failed to upload image: ${response.status} ${response.statusText}`);
-      }
-
-      const result = await response.json();
-      if (result.success && result.images && result.images.length > 0) {
-        handleGiftChange(index, 'image', result.images[0]);
-        
-        const updatedPreviews = [...giftImagePreviews];
-        updatedPreviews[index] = URL.createObjectURL(file);
-        setGiftImagePreviews(updatedPreviews);
-      } else {
-        throw new Error('Failed to get image URL from server');
-      }
+      const urls = await uploadImages([file]);
+      if (urls.length === 0) throw new Error('Server returned no image URL');
+      handleGiftChange(index, 'image', urls[0]);
+      const updatedPreviews = [...giftImagePreviews];
+      updatedPreviews[index] = URL.createObjectURL(file);
+      setGiftImagePreviews(updatedPreviews);
     } catch (error) {
       console.error('Error uploading gift image:', error);
       setError(`Error uploading gift image: ${error.message}`);

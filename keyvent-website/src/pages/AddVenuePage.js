@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { uploadImages } from '../utils/uploadImages';
 
 const AddVenuePage = () => {
   const navigate = useNavigate();
@@ -8,6 +9,7 @@ const AddVenuePage = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
   const [newVenueId, setNewVenueId] = useState(null);
+  const [uploadProgress, setUploadProgress] = useState(null);
   const [rawInputs, setRawInputs] = useState({
     cuisine: '',
     facilities: '',
@@ -174,8 +176,6 @@ const AddVenuePage = () => {
     const files = Array.from(e.target.files);
 
     if (field === 'images') {
-      // No limit on main images
-      setMainImageFiles(files);
       setMainImageFiles(files);
       setVenueData({
         ...venueData,
@@ -200,56 +200,40 @@ const AddVenuePage = () => {
     setNewVenueId(null);
 
     try {
-      // 1. Upload Main Images
-      let mainImageUrls = [];
-      if (mainImageFiles.length > 0) {
-        const formData = new FormData();
-        mainImageFiles.forEach(file => formData.append('images', file));
-        
-        const uploadResponse = await fetch(`${process.env.REACT_APP_SERVER_URL || 'https://api.keyvent.in'}/api/upload`, {
-          method: 'POST',
-          body: formData,
-        });
-        
-        if (!uploadResponse.ok) throw new Error('Failed to upload main images');
-        const uploadResult = await uploadResponse.json();
-        mainImageUrls = uploadResult.images || [];
+      const totalFiles =
+        mainImageFiles.length +
+        galleryImageFiles.length +
+        hallImageFiles.reduce((s, f) => s + f.length, 0);
+      let uploadedSoFar = 0;
+      const tickProgress = (delta) => {
+        uploadedSoFar += delta;
+        setUploadProgress({ uploaded: uploadedSoFar, total: totalFiles });
+      };
+      if (totalFiles > 0) setUploadProgress({ uploaded: 0, total: totalFiles });
+
+      const trackedUpload = async (files, label) => {
+        if (!files || files.length === 0) return [];
+        let lastReported = 0;
+        try {
+          return await uploadImages(files, {
+            onProgress: ({ uploaded }) => {
+              tickProgress(uploaded - lastReported);
+              lastReported = uploaded;
+            },
+          });
+        } catch (err) {
+          throw new Error(`${label}: ${err.message}`);
+        }
+      };
+
+      const mainImageUrls = await trackedUpload(mainImageFiles, 'Main images');
+      const galleryUrls = await trackedUpload(galleryImageFiles, 'Gallery images');
+
+      const allHallImageUrls = [];
+      for (let i = 0; i < hallImageFiles.length; i++) {
+        const urls = await trackedUpload(hallImageFiles[i], `Hall ${i + 1} images`);
+        allHallImageUrls.push(urls);
       }
-
-      // 2. Upload Gallery Images
-      let galleryUrls = [];
-      if (galleryImageFiles.length > 0) {
-        const formData = new FormData();
-        galleryImageFiles.forEach(file => formData.append('images', file));
-        
-        const uploadResponse = await fetch(`${process.env.REACT_APP_SERVER_URL || 'https://api.keyvent.in'}/api/upload`, {
-          method: 'POST',
-          body: formData,
-        });
-        
-        if (!uploadResponse.ok) throw new Error('Failed to upload gallery images');
-        const uploadResult = await uploadResponse.json();
-        galleryUrls = uploadResult.images || [];
-      }
-
-      // 3. Upload Hall Images
-      const hallImageUploadPromises = hallImageFiles.map(async (files, index) => {
-        if (files.length === 0) return [];
-        
-        const formData = new FormData();
-        files.forEach(file => formData.append('images', file));
-        
-        const uploadResponse = await fetch(`${process.env.REACT_APP_SERVER_URL || 'https://api.keyvent.in'}/api/upload`, {
-          method: 'POST',
-          body: formData,
-        });
-        
-        if (!uploadResponse.ok) throw new Error(`Failed to upload images for hall ${index + 1}`);
-        const uploadResult = await uploadResponse.json();
-        return uploadResult.images || [];
-      });
-
-      const allHallImageUrls = await Promise.all(hallImageUploadPromises);
 
       // 4. Prepare Final Payload
       const newVenue = {
@@ -355,10 +339,11 @@ const AddVenuePage = () => {
         setError(result.message || 'Failed to add venue. Please try again.');
       }
     } catch (err) {
-      setError('Network error. Please check your connection and try again.');
+      setError(err.message || 'Failed to save venue. Please try again.');
       console.error('Error saving venue:', err);
     } finally {
       setLoading(false);
+      setUploadProgress(null);
     }
   };
 
@@ -732,7 +717,24 @@ const AddVenuePage = () => {
           </div>
 
           {/* Submit Button */}
-          <div className="flex justify-end">
+          <div className="flex flex-col items-end gap-2">
+            {uploadProgress && uploadProgress.total > 0 && (
+              <div className="w-full max-w-md">
+                <div className="text-sm text-gray-600 mb-1">
+                  Uploading images: {uploadProgress.uploaded} / {uploadProgress.total}
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    className="bg-primary h-2 rounded-full transition-all duration-200"
+                    style={{
+                      width: `${Math.round(
+                        (uploadProgress.uploaded / uploadProgress.total) * 100
+                      )}%`,
+                    }}
+                  />
+                </div>
+              </div>
+            )}
             <button
               type="submit"
               disabled={loading}

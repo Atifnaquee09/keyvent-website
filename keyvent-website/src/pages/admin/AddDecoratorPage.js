@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { uploadImages } from '../../utils/uploadImages';
 
 const AddDecoratorPage = () => {
   const navigate = useNavigate();
@@ -25,30 +26,15 @@ const AddDecoratorPage = () => {
     const file = e.target.files[0];
     if (!file) return;
 
-    const formData = new FormData();
-    formData.append('images', file);
-
     try {
       setLoading(true);
-      const response = await fetch(`${process.env.REACT_APP_SERVER_URL || 'https://api.keyvent.in'}/api/upload`, {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (!response.ok) {
-        throw new Error(`Failed to upload image: ${response.status} ${response.statusText}`);
-      }
-
-      const result = await response.json();
-      if (result.success && result.images && result.images.length > 0) {
-        setDecoratorData(prev => ({
-          ...prev,
-          profileImage: result.images[0]
-        }));
-        setProfileImagePreview(URL.createObjectURL(file));
-      } else {
-        throw new Error('Failed to get image URL from server');
-      }
+      const urls = await uploadImages([file]);
+      if (urls.length === 0) throw new Error('Server returned no image URL');
+      setDecoratorData(prev => ({
+        ...prev,
+        profileImage: urls[0]
+      }));
+      setProfileImagePreview(URL.createObjectURL(file));
     } catch (error) {
       console.error('Error uploading profile image:', error);
       setError(`Error uploading profile image: ${error.message}`);
@@ -63,41 +49,13 @@ const AddDecoratorPage = () => {
 
     try {
       setLoading(true);
-      const uploadedImages = [];
-
-      // Upload each file individually
-      for (let i = 0; i < files.length; i++) {
-        const file = files[i];
-        const formData = new FormData();
-        formData.append('images', file);
-
-        const response = await fetch(`${process.env.REACT_APP_SERVER_URL || 'https://api.keyvent.in'}/api/upload`, {
-          method: 'POST',
-          body: formData,
-        });
-
-        if (!response.ok) {
-          throw new Error(`Failed to upload image: ${response.status} ${response.statusText}`);
-        }
-
-        const result = await response.json();
-        if (result.success && result.images && result.images.length > 0) {
-          uploadedImages.push(result.images[0]);
-        } else {
-          throw new Error('Failed to get image URL from server');
-        }
-      }
-
-      // Update state with all uploaded images
+      const uploadedImages = await uploadImages(files);
       setDecoratorData(prev => ({
         ...prev,
         images: [...prev.images, ...uploadedImages]
       }));
-
-      // Update previews
       const newPreviews = files.map(file => URL.createObjectURL(file));
       setImagePreviews(prev => [...prev, ...newPreviews]);
-
     } catch (error) {
       console.error('Error uploading images:', error);
       setError(`Error uploading images: ${error.message}`);
